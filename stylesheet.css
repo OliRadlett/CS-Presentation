@@ -1,0 +1,12 @@
+#header {
+	text-align: center;
+}
+
+.nostyle {
+	text-decoration: none;
+	color: black;
+}
+
+.nostyle:hover {
+	color: black;
+}
