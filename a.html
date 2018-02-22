@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "prism.css">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>CS-Presentation</title>
+</head>
+<body>
+  <script src = "prism.js"></script>
+  <div id = "header">
+    <h1><u>Computer Science Presentation - Programming Contructs</u></h1>
+    <i><u>Everything you need to know about Sequencing, Iteration and Branching</u></i>
+  </div>
+  <br/>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <ul class = "navbar-nav">
+            <li class = "nav-item">
+                <a class = "nav-link" href = "index.html">Home</a>
+            </li>
+            <li class = "nav-item active">
+                <a class = "nav-link" href = "a.html">Programming Constructs</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "b.html">Recursion</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "d.html">Functions</a>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class = "container">
+      <h2>Sequencing</h2>
+      <p>Sequencing is when a runs code line by line from the start of the program to the end of the program in the order they appear. An example of sequencing would be:</p>
+      <pre>
+        <code class = "language-cpp">
+          #include &lt;iostream&gt;
+
+          int test = 1;
+          std::cout &lt;&lt; test &lt;&lt; std::endl;
+        </code>
+      </pre>
+      <p>In this example, the program creates an integer variable called <i>test</i> and then outputs it to the user. The first line simply includes the header <i>iostream</i>, part of the standard library, which is required to output a value.</p>
+      <p>You can see that the program runs the code line by line from start to finish to output the value stored in the variable named <i>test</i>.</p>
+      <br/>
+      <h2>Iteration</h2>
+      <p>Iteration is when a part of a program repeats itself. This can be useful for applying the same operation to multiple variables or doing other repeated processes. One of the most common uses of iteration is iterating through an array and outputting all the values, as seen in this example:</p>
+      <pre>
+        <code class = "language-cpp">
+          #include &lt;iostream&gt;
+
+          char test[5] = {"H", "e", "l", "l", "o"};
+
+          for (int i = 0; i < test.length(); i++)
+          {
+
+              std::cout &lt;&lt; test[i] &lt;&lt; std::endl;
+          
+          }
+        </code>
+      </pre>
+      <p>As with the first example, the first line simply includes the header <i>iostream</i> which is required to output data. The next line creates an character array with enough space for 5 characters, which it then uses to store the values "<i>H</i>", "<i>e</i>", "<i>l</i>", "<i>l</i>", and "<i>o</i>".</p>
+      <p>The next line sets up a for loop, which is set up to iterate through all of the values of the test character array. It does this by initialising a new integer called <i>i</i> and setting it to <i>0</i>. Then, for every time the <i>i</i> variable is less than the size value of <i>test</i>, it adds one to <i>i</i>. It then runs the code inside the loop.</p>
+      <p>The code inside the loop outputs the value of <i>test</i> stores in the position of the value of <i>i</i>. For example, if <i>i</i> was <i>4</i> then it would output "<i>o</i>". This is a very basic example of iteration.</p>
+    <br/>
+    <h2>Branching</h2>
+    <p>Branching is when a computer program makes a choice, with one outcome running one branch of the program and another running another branch<p> The most simple example of branching is an if statement. The following example shows an if statement, an else if statement, and an else if statement</p>
+    <pre>
+      <code class = "language-cpp">
+        #include &lt;iostream&gt;
+
+        int test1 = 3;
+        bool test2 = false;
+
+        if (test1 == 3)
+        {
+
+          std::cout &lt;&lt; "Outcome 1" &lt;&lt; std::endl;
+
+        }
+        else if (test2)
+        {
+
+          std::cout &lt;&lt; "Outcome 2" &lt;&lt; std::endl;
+
+        }
+        else
+        {
+
+          std::cout &lt;&lt; "Outcome 3" &lt;&lt; std::endl;
+
+        }
+      </code>
+    </pre>
+    </div>
+
+    <!--Keep at end of document for page load times-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--<script src = "script.js"></script>-->
+  </body>
