@@ -37,12 +37,47 @@
     <br/>
     <div class = "container">
       <h2>Recursion</h2>
-      <p></p>
+      <p>In programming, recursion is when a function calls itself. The most common example of this is is a factorial function. The factorial of a number is the number multiplied  by all the numbers less than or equal to itself.</p>
+      <p>An example of a factorial function is shown bellow:</p>
       <pre>
         <code class = "language-cpp">
+          long factorial(int number)
+          {
+            if (number == 1)
+            {
+              return 1;
+            }
+            else
+            {
+              return number * factorial(number - 1);
+            }
+          }
+
+          factorial(3);
         </code>
       </pre>
-      <p></p>
+      <p>In this example, a function called factorial, which returns a long, is defined. First, it check if the parameter passed is equal to 1. If it is, it returns 1, if not, it returns the parameter multiplied by a recursive call to the factorial function with the parameter of the number - 1. This is expressed bellow:</p>
+      <pre>
+        <code class = "language-cpp">
+          factorial(3);
+
+          (3 * ((3 - 2) * ((2 - 1)));
+
+        </code>
+      </pre>
+      <p>As you can see, the function utilises recursion as the function calls itself. Recursive functions are an alternative to a for loop. The factorial function can be written as a for loop:</p>
+      <pre>
+        <code class = "language-cpp">
+          var number = 3;
+          var factorial = 1;
+   
+          for(var i = number; i > 0; i--)
+          {
+            factorial *= i;
+          }
+        </code>
+      </pre>
+      <p>This shows the benefits of using a recursive function, as while the function is 5 lines longer, it can be called in one line for any number which makes the code some much cleaner.</p>
       <br/>
 
     <!--Keep at end of document for page load times-->
